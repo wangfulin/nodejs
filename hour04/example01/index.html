@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Callback Example</title>
+	</head>
+	<body>
+		<h1>Callback Example</h1>
+		<p>Lorem ipsum odlor sit amet,consectetur adipiscing elit</p>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+				//$("p").hide("slow");
+				//alert("The paragraph is now hidden");
+				$("p").hide("slow",function(){
+					alert("The paragraph is now hidden");
+				});
+			});
+		</script>
+	</body>
+</html>
